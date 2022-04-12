@@ -1,0 +1,12 @@
+.design-container {
+    position: relative;
+}
+
+.design-container svg {
+    position: absolute;
+    top: -25vh;
+    height: 50vh;
+    filter: blur(50px);
+    -webkit-filter: blur(50px);  
+    z-index: -100;
+}

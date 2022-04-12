@@ -1,0 +1,39 @@
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.skills-container .title {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 30px;
+}
+
+.skills-container .cards-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.skills-container .cards-container div {
+  display: flex;
+  text-align: center;
+  flex-direction: column-reverse;
+  margin: 0px 40px;
+}
+
+.skills-container .cards-container div img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
+.skills-container .cards-container .card {
+  -webkit-box-shadow: 6px 6px 23px 0px rgba(15, 15, 15, 0.37);
+  -moz-box-shadow: 6px 6px 23px 0px rgba(15, 15, 15, 0.37);
+  box-shadow: 6px 6px 23px 0px rgba(15, 15, 15, 0.37);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

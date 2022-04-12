@@ -1,0 +1,21 @@
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav div a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #000;
+}
+
+nav div a:hover {
+    font-weight: 500;
+}
