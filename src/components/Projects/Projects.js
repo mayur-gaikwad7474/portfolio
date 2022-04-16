@@ -5,7 +5,7 @@ const Projects = () => {
     return (
         <div className='skills-container'>
             <span className='title'>My Recent Projects</span>
-            <div className='cards-container'>
+            <div className='cards-container cards-container2'>
                 <div className='card' onClick={() => window.open(
                     'https://todolist7474.herokuapp.com/',
                     '_blank'

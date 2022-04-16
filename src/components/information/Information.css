@@ -1,8 +1,8 @@
 .info-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-top: 50px;
-  padding-left: 6%;
 }
 
 .info-container .info {
@@ -44,33 +44,39 @@
   cursor: pointer;
 }
 
-.info-container .images {
-  width: 100%;
-  position: relative;
+.info-container img {
+  height: 80vh;
+  margin-top: -25vh;
 }
 
-.info-container .images svg:nth-child(1) {
-  position: absolute;
-  height: 60vh;
-  top: -10vh;
+@media screen and (max-width: 900px) {
+  .info-container {
+    flex-direction: column;
+  }
+
+  .info-container img {
+    margin-top: -10vh;
+  }
 }
 
-.info-container .images .profile {
-  height: 60vh;
-  position: relative;
-  overflow: hidden;
-}
+@media screen and (max-width: 500px) {
+  .info-container {
+    margin-top: 20px;
+  }
 
-.info-container .images .profile svg:nth-child(1) {
-  position: absolute;
-  height: 85vh;
-  top: -10vh;
-  transform: rotate(80deg);
-}
+  .info-container img {
+    width: 100%;
+    height: auto;
+  }
 
-.info-container .images img {
-  position: absolute;
-  height: 73vh;
-  left: 250px;
-  top: -40px;
+  .info-container .info span {
+    font-family: "Mochiy Pop One", sans-serif;
+    font-size: 28px;
+  }
+
+  .info-container .info p {
+    width: 100%;
+    letter-spacing: normal;
+    margin-top: 10px;
+  }
 }
